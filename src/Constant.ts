@@ -1,5 +1,5 @@
 export const DoujindesuBaseUrl = "https://doujindesu.tv"
-export const OtakudesuBaseUrl = "https://otakudesu.lol"
+export const OtakudesuBaseUrl = "https://otakudesu.cloud"
 export const YoutubeSearchBaseUrl = "https://youtube.com"
 export const YoutubeDownloadBaseUrl =
 	"https://backendpro.myconverters.com"
