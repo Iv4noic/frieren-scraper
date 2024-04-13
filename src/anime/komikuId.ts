@@ -106,20 +106,20 @@ class komiku {
 				const chapter: string = $(e)
 					.find(komiku._latestLoader.chapterLoader)
 					.text()
-				let url: string = $(e)
-					.find(komiku._latestLoader.urlLoader.base)
-					.attr(komiku._latestLoader.urlLoader.attribute)
+				// let url: string = $(e)
+					// .find(komiku._latestLoader.urlLoader.base)
+					// .attr(komiku._latestLoader.urlLoader.attribute)
 				const thumbnail: string = $(e)
 					.find(komiku._latestLoader.thumbnailLoader.base)
 					.attr(komiku._latestLoader.thumbnailLoader.attribute)
 					.replace(/\?.*$/, "")
-				console.log(url)	
-				if (url.startsWith("http")) {
-					url = url
-				} else {
-					url = KomikuIdBaseUrl + url
-				}
-				_temp.push({ title, updated, chapter, url, thumbnail })
+				// console.log(url)	
+				// if (url.startsWith("http")) {
+					// url = url
+				// } else {
+					// url = KomikuIdBaseUrl + url
+				// }
+				_temp.push({ title, updated, chapter, thumbnail })
 			})
 			if (Array.isArray(_temp) && _temp.length) {
 				return _temp
@@ -332,3 +332,4 @@ export const detail = async function (
 > {
 	return await komiku.detail(url)
 					}
+					
