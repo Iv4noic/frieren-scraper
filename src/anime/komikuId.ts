@@ -113,6 +113,7 @@ class komiku {
 					.find(komiku._latestLoader.thumbnailLoader.base)
 					.attr(komiku._latestLoader.thumbnailLoader.attribute)
 					.replace(/\?.*$/, "")
+				console.log(url)	
 				if (url.startsWith("http")) {
 					url = url
 				} else {
@@ -330,4 +331,4 @@ export const detail = async function (
 	| errorHandling
 > {
 	return await komiku.detail(url)
-}
+					}
