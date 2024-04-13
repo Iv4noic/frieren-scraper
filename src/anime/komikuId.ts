@@ -18,11 +18,11 @@ class komiku {
 
 	private static _latestLoader = {
 		base: "#Terbaru > .ls4w > article.ls4",
-		titleLoader: "h4 > a",
+		titleLoader: "h3 > a",
 		updatedLoader: "span.ls4s",
 		chapterLoader: "a.ls24",
 		urlLoader: {
-			base: "h4 > a",
+			base: "h3 > a",
 			attribute: "href"
 		},
 		thumbnailLoader: {
