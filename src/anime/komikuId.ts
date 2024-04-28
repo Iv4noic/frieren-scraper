@@ -58,7 +58,7 @@ class komiku {
 		},
 		chapter: {
 			titleLoader: {
-				title: "#Judul > h1"
+				title: "#Judul > table.tbl > tbody > tr > td:nth-child(2)"
 			},
 			imagesLoader: {
 				base: "#Baca_Komik > img",
